@@ -4,12 +4,20 @@
 
 ## 从这里开始
 
-当前状态（2026-09-28）：原理学习与本人业务初稿已有记录；**现有Python全部由Agent编写，用户只写过部分SQL；Python独立实现未开始；Git学习已完成G1首次本地提交操作（仅.gitignore），概念待评审**。下一阶段按 [Python独立实操＋Git/GitHub发布计划](docs/python_independent_practice_plan.md) 执行：先G1本地版本管理、G2私有上传，再P1—P6；G3持续练习提交，G4穿插分支/PR/纠错，最后G5新克隆复现、G6公开发布。终端为主、PyCharm辅助；每次由用户亲手完成一个小任务。当前main上已有首次提交bd1443e，仅包含.gitignore；其余文件未跟踪，无远程配置、未上传。下一步核对概念和其余文件范围。接手先读 [PROJECT_STATE.md](PROJECT_STATE.md) 和 [TODO.md](TODO.md)；[技术审计](reports/checkpoints/2026-09-27/review.md)验证参考实现，不代表个人代码能力。
+当前状态（2026-09-28）：原理学习与本人业务初稿已有记录；
+**现有 Python 全部由 Agent 编写，用户只写过部分 SQL，Python 独立实现尚未开始。**
+已在指导下完成 G1 本地版本管理和 G2 首次私有仓库上传，并通过保存、提交、推送的基础概念问答。
+参考实现与学习记录已上传到私有仓库 `xiaomaoII/email-abtest-analysis`。
+下一阶段按 [Python 独立实操＋Git/GitHub 项目发布计划](docs/python_independent_practice_plan.md) 从 P1 数据读取检查开始；
+G3 将随 P1—P6 持续练习提交和推送，之后完成 G4 分支、Pull Request 与纠错练习，最后进行 G5 新克隆复现和 G6 公开发布。
+终端为主、PyCharm 辅助；每次由用户亲手完成一个小任务。
+接手先读 [PROJECT_STATE.md](PROJECT_STATE.md) 和 [TODO.md](TODO.md)；
+[技术审计](reports/checkpoints/2026-09-27/review.md)验证参考实现，不代表个人代码能力。
 
 1. [一页业务决策摘要](reports/decision_summary.md)：参考产物；本人初稿在 `exercises/my_answers.md`。
 2. [完整分析报告](reports/analysis_report.md)：查看口径、证据和适用边界。
 3. [分阶段学习路线](docs/learning_path.md)：核对学习步骤与Notebook章节，再查看参考解答。
-4. [已执行的分析笔记本](notebooks/analysis.ipynb)：逐步重新计算并核对报告结果。
+4. [无输出的展示笔记本](notebooks/analysis_portfolio.ipynb)：保留分析代码，适合在仓库中查看；本地学习版 `notebooks/analysis.ipynb` 已通过 `.gitignore` 排除，不会被删除。
 5. [简历与面试材料](docs/interview.md)：完成理解和复现后，改写成自己的表达。
 
 ## 环境与运行
