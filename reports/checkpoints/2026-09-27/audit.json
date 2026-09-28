@@ -1,0 +1,310 @@
+{
+  "checked_utc": "2026-09-27T13:33:08.640140+00:00",
+  "scope": "Subgroups, conditional cost scenarios, learner draft checkpoint; no next-stage tutoring",
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "statsmodels": "0.14.5",
+    "duckdb": "1.4.1",
+    "matplotlib": "3.10.7",
+    "nbformat": "5.10.4",
+    "nbclient": "0.10.2",
+    "ipykernel": "6.30.1",
+    "pytest": "8.4.2"
+  },
+  "package_drift_from_historical_lock": {
+    "numpy": {
+      "current": "2.4.6",
+      "locked": "2.3.5"
+    }
+  },
+  "source_sha256": "00a6a868e05a9ffe7382da51629f6d6dce88c5acfc945e79d314ebc78fd3a2c0",
+  "rows": 64000,
+  "zero_spend_rows": 63422,
+  "exclusions": 0,
+  "sql_preview_rows": 5,
+  "sql_summary_rows": 3,
+  "processed_csv_and_readonly_database_match": true,
+  "saved_tables_recomputed_and_matched": [
+    "group_metrics",
+    "effects",
+    "interaction_tests",
+    "subgroup_effects",
+    "profit_scenarios",
+    "sample_size_plan",
+    "baseline_balance",
+    "segment_metrics"
+  ],
+  "segment_totals_per_dimension": {
+    "customer_type": 64000,
+    "history_band": 64000,
+    "recency_band": 64000
+  },
+  "grouping_invariant_to_outcomes": true,
+  "independent_hc3_cell_mean_tests": [
+    {
+      "dimension": "customer_type",
+      "wald_chi2": 5.929085606333488,
+      "df": 2,
+      "p_value": 0.05158404791801083,
+      "total_rows": 64000,
+      "minimum_cell_n": 10611
+    },
+    {
+      "dimension": "history_band",
+      "wald_chi2": 9.055322670255787,
+      "df": 4,
+      "p_value": 0.05973145493029103,
+      "total_rows": 64000,
+      "minimum_cell_n": 4802
+    },
+    {
+      "dimension": "recency_band",
+      "wald_chi2": 4.076335283066664,
+      "df": 4,
+      "p_value": 0.39577355688230204,
+      "total_rows": 64000,
+      "minimum_cell_n": 4673
+    }
+  ],
+  "interactions": [
+    {
+      "dimension": "customer_type",
+      "wald_chi2": 5.929085606333374,
+      "df": 2,
+      "p_value": 0.05158404791801374,
+      "covariance": "HC3",
+      "p_holm_exploratory": 0.15475214375404123
+    },
+    {
+      "dimension": "history_band",
+      "wald_chi2": 9.055322670255848,
+      "df": 4,
+      "p_value": 0.05973145493028956,
+      "covariance": "HC3",
+      "p_holm_exploratory": 0.15475214375404123
+    },
+    {
+      "dimension": "recency_band",
+      "wald_chi2": 4.0763352830667365,
+      "df": 4,
+      "p_value": 0.39577355688229227,
+      "covariance": "HC3",
+      "p_holm_exploratory": 0.39577355688229227
+    }
+  ],
+  "subgroup_rows_checked": 16,
+  "minimum_subgroup_buyers": 26,
+  "customer_type_effects": [
+    {
+      "effect": 0.5779669050857943,
+      "se": 0.22264348682288812,
+      "df": 19998.066641354126,
+      "p_value": 0.00944042449572185,
+      "ci_low": 0.14156727685908765,
+      "ci_high": 1.014366533312501,
+      "status": "ok",
+      "dimension": "customer_type",
+      "subgroup": "已有客户",
+      "arm": "Mens E-Mail",
+      "n_treatment": 10621,
+      "n_control": 10611,
+      "buyers_treatment": 148,
+      "buyers_control": 82
+    },
+    {
+      "effect": 0.11395712053756446,
+      "se": 0.1986901016040254,
+      "df": 21166.66335387962,
+      "p_value": 0.566283855681472,
+      "ci_low": -0.2754905922994947,
+      "ci_high": 0.5034048333746236,
+      "status": "ok",
+      "dimension": "customer_type",
+      "subgroup": "已有客户",
+      "arm": "Womens E-Mail",
+      "n_treatment": 10624,
+      "n_control": 10611,
+      "buyers_treatment": 92,
+      "buyers_control": 82
+    },
+    {
+      "effect": 0.9600198419292101,
+      "se": 0.18685151827383872,
+      "df": 15465.364635964543,
+      "p_value": 2.8124216314196135e-07,
+      "ci_low": 0.5937689318257573,
+      "ci_high": 1.3262707520326629,
+      "status": "ok",
+      "dimension": "customer_type",
+      "subgroup": "近12月新客户",
+      "arm": "Mens E-Mail",
+      "n_treatment": 10686,
+      "n_control": 10695,
+      "buyers_treatment": 119,
+      "buyers_control": 40
+    },
+    {
+      "effect": 0.7322877956561398,
+      "se": 0.1689258432431204,
+      "df": 16759.108830237554,
+      "p_value": 1.4663264622056548e-05,
+      "ci_low": 0.4011753134954941,
+      "ci_high": 1.0634002778167855,
+      "status": "ok",
+      "dimension": "customer_type",
+      "subgroup": "近12月新客户",
+      "arm": "Womens E-Mail",
+      "n_treatment": 10763,
+      "n_control": 10695,
+      "buyers_treatment": 97,
+      "buyers_control": 40
+    }
+  ],
+  "scenario_rows_checked": 30,
+  "women_margin_40": [
+    {
+      "arm": "Womens E-Mail",
+      "assumed_margin": 0.4,
+      "assumed_contact_cost_usd": 0.0,
+      "net_per_customer": 0.1697648863746387,
+      "net_ci_low_family": 0.052909124127913626,
+      "net_ci_high_family": 0.28662064862136377,
+      "break_even_cost_point": 0.1697648863746387,
+      "break_even_cost_lower_bound": 0.052909124127913626,
+      "scenario_signal": "区间下界为正"
+    },
+    {
+      "arm": "Womens E-Mail",
+      "assumed_margin": 0.4,
+      "assumed_contact_cost_usd": 0.01,
+      "net_per_customer": 0.1597648863746387,
+      "net_ci_low_family": 0.042909124127913624,
+      "net_ci_high_family": 0.27662064862136376,
+      "break_even_cost_point": 0.1697648863746387,
+      "break_even_cost_lower_bound": 0.052909124127913626,
+      "scenario_signal": "区间下界为正"
+    },
+    {
+      "arm": "Womens E-Mail",
+      "assumed_margin": 0.4,
+      "assumed_contact_cost_usd": 0.05,
+      "net_per_customer": 0.11976488637463871,
+      "net_ci_low_family": 0.002909124127913623,
+      "net_ci_high_family": 0.23662064862136378,
+      "break_even_cost_point": 0.1697648863746387,
+      "break_even_cost_lower_bound": 0.052909124127913626,
+      "scenario_signal": "区间下界为正"
+    },
+    {
+      "arm": "Womens E-Mail",
+      "assumed_margin": 0.4,
+      "assumed_contact_cost_usd": 0.1,
+      "net_per_customer": 0.06976488637463871,
+      "net_ci_low_family": -0.04709087587208638,
+      "net_ci_high_family": 0.18662064862136377,
+      "break_even_cost_point": 0.1697648863746387,
+      "break_even_cost_lower_bound": 0.052909124127913626,
+      "scenario_signal": "区间跨零或触零"
+    },
+    {
+      "arm": "Womens E-Mail",
+      "assumed_margin": 0.4,
+      "assumed_contact_cost_usd": 0.2,
+      "net_per_customer": -0.0302351136253613,
+      "net_ci_low_family": -0.14709087587208639,
+      "net_ci_high_family": 0.08662064862136376,
+      "break_even_cost_point": 0.1697648863746387,
+      "break_even_cost_lower_bound": 0.052909124127913626,
+      "scenario_signal": "区间跨零或触零"
+    }
+  ],
+  "executed_cell_ids": [
+    "hillstrom-02",
+    "hillstrom-04",
+    "hillstrom-06",
+    "hillstrom-08",
+    "hillstrom-10",
+    "hillstrom-14",
+    "992ae00247d4e0af",
+    "98388394faf70936",
+    "hillstrom-16",
+    "3998930164f06feb",
+    "hillstrom-18"
+  ],
+  "notebook_cells": 29,
+  "notebook_written": false,
+  "temporary_builds": 2,
+  "generated_ids_order_sources_match": true,
+  "practice_ids": [
+    "992ae00247d4e0af",
+    "7c5d9288a25c4670",
+    "98388394faf70936",
+    "3998930164f06feb"
+  ],
+  "preserved_sha256": {
+    "notebooks/analysis.ipynb": "f9472954630a717244a29ab8f44ab303f0cb093a4b851928d0649a8c4f011c32",
+    "config.json": "a4355ebbb07aa57f84534a48710cc0b300f209363b7095f4901c7f1f5507818a",
+    "data/raw/hillstrom.csv": "00a6a868e05a9ffe7382da51629f6d6dce88c5acfc945e79d314ebc78fd3a2c0",
+    "docs/interview.md": "cac21e4d337941594077af14c45fa5d8e544722250fb0b1c0b184e30a9bf6a6b",
+    "reports/checkpoint.json": "e8dfc912ac9ad335ffb9545b7df40dd07f18853aee5e382e4fa126747b5ff573",
+    "reports/run_manifest.json": "745b43b5a35c90865907ddd4001050b2f9c6a239e3576416c6350eb1e24a1d7b",
+    "reports/checkpoint_tests.xml": "2bedc010758b295d22b8bf8831fb81fc9424331363472514230f9f861bd7ada7",
+    "reports/test_results.xml": "89ac8532864362fc079db2777a1dd0cbd3e0e8469a4c4f8f37941eb4c4b6b313",
+    "reports/analysis_report.md": "bb1fc93d6afd8a00546b0d8ecb3a0f3c3bf8ee602ec33f3dea3bb97180685684",
+    "reports/decision_summary.md": "731dbbfd6b6f3008b8b23edd3655669d80a184656ea2e7b6ac798978ebf61a42",
+    "reports/tables/baseline_balance.csv": "aaa3d25fb8ebd3667ebf1085dcf86512c2e43853b52480f5db796cae0decbfcc",
+    "reports/tables/effects.csv": "e4f4bfcea95e38d8ad70ddd74138a99820c89cc95aa7d69a61e6fdc2af8d79bb",
+    "reports/tables/group_metrics.csv": "6441011a243e505932e240d120d2dd182cf681783779dcb7f199a17e64f48bc3",
+    "reports/tables/interaction_tests.csv": "24b153fd9beef78b0d8a3ea0fee8bfe028f18e0f212852a79bf1031de5cfbf84",
+    "reports/tables/profit_scenarios.csv": "e5d4276aeddf0ec8ad2b964a46754faea7efa91433d3035bdaf7a2bddac279bb",
+    "reports/tables/quality.json": "640b6aa2bf6addf593a2b0fd5d9541d2c5757bf2a0cea7a6a8ce5df50cbe781f",
+    "reports/tables/randomization.json": "83bbdd5fa98232ed8a9dbb63ce0d4f4d762875a3f54e980e817bbc0206b06588",
+    "reports/tables/sample_size_plan.csv": "0045b35d1fb463ed1e3b5c45b613b0a10ccaf8f76e5cb2d2becb6c1cca627526",
+    "reports/tables/segment_metrics.csv": "8aa9c63a69951a5df3b9fc3b916a61bba00a837e4272e5b766e954059cbb45c2",
+    "reports/tables/subgroup_effects.csv": "815270b6d8abea7786dc0372846bf8f0679a7b419cff85a52114936a3d956a03",
+    "reports/figures/baseline_balance.png": "20778cdc229498b2b8f08607fc23ed942cb17429bb66a3b1b9d919b9ce5cfe07",
+    "reports/figures/revenue_effects.png": "9d228e054afc95115988206ffa93f76a9b2f9b9b9e561948f37abfe8801043e6",
+    "reports/figures/subgroup_effects.png": "0e752b8d1410fc7f6d86fc6a5525aaa5a670d3fcfa0082e0427a47e8dbe4b7d8",
+    "reports/checkpoints/2026-09-24/audit.json": "264c0a0aaa4854898feb4e5837deba1e35a292d350d3eb3c7453b117692ae442",
+    "reports/checkpoints/2026-09-24/tests.xml": "bc6897910bb08650b9feb384540f31c52be6eb8811a468183a0fa544325410da",
+    "reports/checkpoints/2026-09-24/verify.py": "afdc6e86821d9932ecb6daea2ff85895cd05098e9cd9f153cfb2737414365b27",
+    "data/raw/hillstrom.source.json": "9275fbbcfa43482012bf4e0115db45e59ef7401bae0143b37e3125d6a6a4227a",
+    "data/processed/customers.csv": "3d687b9ca87e69934f0218e06e58efe38995d26ab507fd74a94e6fd625911878",
+    "data/processed/hillstrom.duckdb": "a98e4e058e7767918975cebf487d0aa872b714231b90e85804fcec63547b849f"
+  },
+  "historical_table_hashes_match": true,
+  "tests": {
+    "passed": 41,
+    "report": "reports/checkpoints/2026-09-27/tests.xml",
+    "sha256": "6c91c349b0ab691702197284b50d6092669b931eb4bbd275afb973c466d6d47d",
+    "rerun_by_this_script": false
+  },
+  "inputs_sha256": {
+    "abtest/data.py": "949d107e3d9c39f2fe6f5a31e384fbfb0e4aa2faceb5a93a9caaecc8e1cc8b55",
+    "abtest/notebook.py": "c81b97c72412faa9597aa47ad8143779efba935a72214b9383594fec2b1e734f",
+    "abtest/pipeline.py": "9e47651d4227e269fa1acf4194463334d76337105953522b966f762662899e19",
+    "abtest/reporting.py": "e48ba6d9991df9e5d3e1d160dfce66588108dcce12f9e38e632a63971eade7f5",
+    "abtest/statistics.py": "388721e892fe71c92db92b3ae08844e42c19103d0b0ab3cda6eb94d932920334",
+    "abtest/__init__.py": "0a2d739507fd04d34cb7e59657c413b32c112fa6ca2094842bd3e9730ea952bf",
+    "tests/test_analysis.py": "c8ef14b2b3a78dcbd60dbeb76a8ea982c105a0bc2fa05c5c012e1aada3a749d6",
+    "tests/test_stage_three.py": "cfacddfc130289e2b3924ca31d90a29c517159d36ac747b5ba776543dfe03e5c",
+    "sql/01_metrics.sql": "c40dd42fd6f2b82dc25d709f89ddfe909e713fdad821ef07cc672d044180866c",
+    "sql/02_segments.sql": "0ee4d52e156a5e7d890a5b007b4d40494cb4c5ff2255825f09449dcb32d79ab1",
+    "PROJECT_STATE.md": "b4b63ca316e8c04f81cab9bb67086bd3b8133ba2e00e817a5c5939466387ac3c",
+    "README.md": "9d0d020793b30a2dd2f6a03db6c5bba2ad28d73c114f1033775c236ee118dc0b",
+    "TODO.md": "bf873e4793013d62021243088b283444510147048fb9ad7c88609dfd16837231",
+    "config.json": "a4355ebbb07aa57f84534a48710cc0b300f209363b7095f4901c7f1f5507818a",
+    "requirements-lock.txt": "7405535809c73a1ab0239f789576c31448bbe2f5d20612d94e9e28365cb8ee5d",
+    "requirements.txt": "7ba6cc4deea2612f8a5eed65868d5d0d38d83196ef7cabad3758a135543752c6",
+    "exercises/my_answers.md": "2ef0f5873ad4657c971961571a59eac66b0f4ca3d0aa4be5fbe8ecdbac70250f",
+    "exercises/01_metrics.sql": "17bf1898468d3444273775b02dcd54dd1a4e076a3c5933994d9b215beea429fa",
+    "docs/learning_path.md": "7e27496a94e2535fbf8e34660dfb379f6213e4bec73825df197292377c395bfb",
+    "docs/result_tables.md": "e77ab71dbcbca66c9616175348f6da6000dccbdaad500b6df6bf5819dc932d63",
+    "reports/checkpoints/2026-09-27/verify.py": "2f85654882673de192c22c78860c45589027994c7b7389fb58ff8418e9f48ef7",
+    "reports/checkpoints/2026-09-27/review.md": "3085cd2ceb3c9ab63e365f02e73422449b8ed32481b007293a484431ba620567"
+  },
+  "learning_boundary": "User completed this phase; HC0-3 mastery self-reported, draft exists, resume reference only, no interview rehearsal; await explicit resume"
+}

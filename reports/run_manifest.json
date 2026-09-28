@@ -1,0 +1,74 @@
+{
+  "generated_utc": "2026-09-16T17:03:39.493899+00:00",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "config": {
+    "seed": 20260917,
+    "alpha": 0.05,
+    "bootstrap_reps": 5000,
+    "srm_alpha": 0.001,
+    "margins": [
+      0.2,
+      0.4,
+      0.6
+    ],
+    "contact_costs_usd": [
+      0.0,
+      0.01,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "planning_mde_usd": [
+      0.25,
+      0.5,
+      1.0
+    ],
+    "planning_power": 0.8
+  },
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "statsmodels": "0.14.5",
+    "duckdb": "1.4.1",
+    "matplotlib": "3.10.7",
+    "nbformat": "5.10.4",
+    "nbclient": "0.10.2",
+    "ipykernel": "6.30.1",
+    "pytest": "8.4.2"
+  },
+  "source_sha256": "00a6a868e05a9ffe7382da51629f6d6dce88c5acfc945e79d314ebc78fd3a2c0",
+  "inputs_sha256": {
+    "config.json": "a4355ebbb07aa57f84534a48710cc0b300f209363b7095f4901c7f1f5507818a",
+    "requirements.txt": "7ba6cc4deea2612f8a5eed65868d5d0d38d83196ef7cabad3758a135543752c6",
+    "run.py": "00c35b04a3d673215f9bb3050180a53b27e563820af40319e8b6ddc10cae3f24",
+    "requirements-lock.txt": "7405535809c73a1ab0239f789576c31448bbe2f5d20612d94e9e28365cb8ee5d",
+    "abtest/__init__.py": "0a2d739507fd04d34cb7e59657c413b32c112fa6ca2094842bd3e9730ea952bf",
+    "abtest/data.py": "949d107e3d9c39f2fe6f5a31e384fbfb0e4aa2faceb5a93a9caaecc8e1cc8b55",
+    "abtest/notebook.py": "9a965aa29b3220fda120fc3a1e77c3aac9639294f52a5e9bedca6f35d8218d4a",
+    "abtest/pipeline.py": "9e47651d4227e269fa1acf4194463334d76337105953522b966f762662899e19",
+    "abtest/reporting.py": "e48ba6d9991df9e5d3e1d160dfce66588108dcce12f9e38e632a63971eade7f5",
+    "abtest/statistics.py": "388721e892fe71c92db92b3ae08844e42c19103d0b0ab3cda6eb94d932920334",
+    "sql/01_metrics.sql": "c40dd42fd6f2b82dc25d709f89ddfe909e713fdad821ef07cc672d044180866c",
+    "sql/02_segments.sql": "0ee4d52e156a5e7d890a5b007b4d40494cb4c5ff2255825f09449dcb32d79ab1"
+  },
+  "table_sha256": {
+    "baseline_balance.csv": "aaa3d25fb8ebd3667ebf1085dcf86512c2e43853b52480f5db796cae0decbfcc",
+    "effects.csv": "e4f4bfcea95e38d8ad70ddd74138a99820c89cc95aa7d69a61e6fdc2af8d79bb",
+    "group_metrics.csv": "6441011a243e505932e240d120d2dd182cf681783779dcb7f199a17e64f48bc3",
+    "interaction_tests.csv": "24b153fd9beef78b0d8a3ea0fee8bfe028f18e0f212852a79bf1031de5cfbf84",
+    "profit_scenarios.csv": "e5d4276aeddf0ec8ad2b964a46754faea7efa91433d3035bdaf7a2bddac279bb",
+    "quality.json": "640b6aa2bf6addf593a2b0fd5d9541d2c5757bf2a0cea7a6a8ce5df50cbe781f",
+    "randomization.json": "83bbdd5fa98232ed8a9dbb63ce0d4f4d762875a3f54e980e817bbc0206b06588",
+    "sample_size_plan.csv": "0045b35d1fb463ed1e3b5c45b613b0a10ccaf8f76e5cb2d2becb6c1cca627526",
+    "segment_metrics.csv": "8aa9c63a69951a5df3b9fc3b916a61bba00a837e4272e5b766e954059cbb45c2",
+    "subgroup_effects.csv": "815270b6d8abea7786dc0372846bf8f0679a7b419cff85a52114936a3d956a03"
+  },
+  "intervals": {
+    "pointwise": 0.95,
+    "family": 0.95,
+    "bonferroni_individual": 0.975
+  },
+  "note": "表中的空字段代表不适用或不可用，绝不等于零；金额均为美元。"
+}

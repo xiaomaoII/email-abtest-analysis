@@ -1,0 +1,36 @@
+{
+  "rows": 64000,
+  "missing_by_column": {
+    "recency": 0,
+    "history_segment": 0,
+    "history": 0,
+    "mens": 0,
+    "womens": 0,
+    "zip_code": 0,
+    "newbie": 0,
+    "channel": 0,
+    "segment": 0,
+    "visit": 0,
+    "conversion": 0,
+    "spend": 0
+  },
+  "contradictions": {
+    "conversion_without_visit": 0,
+    "spend_without_conversion": 0,
+    "conversion_without_spend": 0
+  },
+  "identical_rows_after_first": 6562,
+  "identical_rows_action": "保留：无原始用户 ID，相同属性不代表同一人。",
+  "zero_spend_rows": 63422,
+  "spend_max": 499.0,
+  "spend_quantiles": {
+    "0.5": 0.0,
+    "0.95": 0.0,
+    "0.99": 0.0,
+    "0.999": 243.6604900000019
+  },
+  "amount_unit": "USD",
+  "exclusions": 0,
+  "source_spelling_surburban_rows": 28776,
+  "sql_python_reconciliation": "passed"
+}

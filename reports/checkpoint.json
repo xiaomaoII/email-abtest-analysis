@@ -1,0 +1,106 @@
+{
+  "checked_utc": "2026-09-20T11:40:29.434408+00:00",
+  "scope": "Notebook sections 1-5 incl. secondary outputs; no later stage started",
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "statsmodels": "0.14.5",
+    "duckdb": "1.4.1",
+    "matplotlib": "3.10.7",
+    "nbformat": "5.10.4",
+    "nbclient": "0.10.2",
+    "ipykernel": "6.30.1",
+    "pytest": "8.4.2"
+  },
+  "source_sha256": "00a6a868e05a9ffe7382da51629f6d6dce88c5acfc945e79d314ebc78fd3a2c0",
+  "rows": 64000,
+  "zero_spend_rows": 63422,
+  "exclusions": 0,
+  "preview_rows": 5,
+  "summary_rows": 3,
+  "sql_python_reconciliation": "passed",
+  "notebook_displayed_tables": 2,
+  "notebook_later_cells_preserved": true,
+  "srm": {
+    "expected_ratio": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "counts": {
+      "No E-Mail": 21306,
+      "Mens E-Mail": 21307,
+      "Womens E-Mail": 21387
+    },
+    "chi_square": 0.20253125000000002,
+    "p_value": 0.9036929575604196,
+    "alpha": 0.001,
+    "flagged": false,
+    "interpretation": "未发现比例异常不等于证明随机化成功；实际分流机制及日志不可观测。"
+  },
+  "max_abs_smd": 0.016359543173779502,
+  "main_effects": [
+    {
+      "arm": "Mens E-Mail",
+      "n_treatment": 21307,
+      "n_control": 21306,
+      "relative_lift": 1.1792887703620063,
+      "effect": 0.7698271558945368,
+      "p_value": 1.163814968225477e-07,
+      "p_holm": 2.327629936450954e-07,
+      "ci_low": 0.4851397325684076,
+      "ci_high": 1.0545145792206658,
+      "bootstrap_low": 0.493580692487406,
+      "bootstrap_high": 1.0510475118141973,
+      "family_ci_low": 0.44425774946535,
+      "family_ci_high": 1.0953965623237236
+    },
+    {
+      "arm": "Womens E-Mail",
+      "n_treatment": 21387,
+      "n_control": 21306,
+      "relative_lift": 0.6501518638646862,
+      "effect": 0.4244122159365967,
+      "p_value": 0.00112939710236325,
+      "p_holm": 0.00112939710236325,
+      "ci_low": 0.16895678988377877,
+      "ci_high": 0.6798676419894147,
+      "bootstrap_low": 0.1710732222943751,
+      "bootstrap_high": 0.6794058763092676,
+      "family_ci_low": 0.13227281031978405,
+      "family_ci_high": 0.7165516215534093
+    }
+  ],
+  "effects_match_saved": true,
+  "historical_manifest": "reports/run_manifest.json",
+  "historical_table_hashes_match": true,
+  "historical_input_changes": [
+    "abtest/notebook.py"
+  ],
+  "historical_manifest_note": "Preserved original run date and hashes; notebook generator changed at checkpoint. Statistical code and result tables unchanged.",
+  "tests": {
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest -q --junitxml=reports/checkpoint_tests.xml",
+    "report": "reports/checkpoint_tests.xml"
+  },
+  "inputs_sha256": {
+    "config.json": "a4355ebbb07aa57f84534a48710cc0b300f209363b7095f4901c7f1f5507818a",
+    "requirements.txt": "7ba6cc4deea2612f8a5eed65868d5d0d38d83196ef7cabad3758a135543752c6",
+    "run.py": "00c35b04a3d673215f9bb3050180a53b27e563820af40319e8b6ddc10cae3f24",
+    "requirements-lock.txt": "7405535809c73a1ab0239f789576c31448bbe2f5d20612d94e9e28365cb8ee5d",
+    "abtest/__init__.py": "0a2d739507fd04d34cb7e59657c413b32c112fa6ca2094842bd3e9730ea952bf",
+    "abtest/data.py": "949d107e3d9c39f2fe6f5a31e384fbfb0e4aa2faceb5a93a9caaecc8e1cc8b55",
+    "abtest/notebook.py": "0d5a022b43c2b65e7d207a4dd87136201cadd024100e8aa0f86cb1f293b4a21b",
+    "abtest/pipeline.py": "9e47651d4227e269fa1acf4194463334d76337105953522b966f762662899e19",
+    "abtest/reporting.py": "e48ba6d9991df9e5d3e1d160dfce66588108dcce12f9e38e632a63971eade7f5",
+    "abtest/statistics.py": "388721e892fe71c92db92b3ae08844e42c19103d0b0ab3cda6eb94d932920334",
+    "sql/01_metrics.sql": "c40dd42fd6f2b82dc25d709f89ddfe909e713fdad821ef07cc672d044180866c",
+    "sql/02_segments.sql": "0ee4d52e156a5e7d890a5b007b4d40494cb4c5ff2255825f09449dcb32d79ab1"
+  },
+  "checkpoint_files_sha256": {
+    "exercises/01_metrics.sql": "17bf1898468d3444273775b02dcd54dd1a4e076a3c5933994d9b215beea429fa",
+    "notebooks/analysis.ipynb": "97f089319d479b633d7162ce9d53d05dc5c6059d35b0d7df15c54b5e94a3783c",
+    "tests/test_analysis.py": "7c02f4f9612914608e31048622cf0dd0ab8a25a60d3e25e4986b68c90e762723"
+  }
+}
