@@ -1,0 +1,14 @@
+{
+  "source_page": "https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html",
+  "requested_url": "https://hillstorm1.s3.us-east-2.amazonaws.com/hillstorm_no_indices.csv.gz",
+  "fallback_reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)>",
+  "mirror_documentation": "https://www.uplift-modeling.com/en/latest/_modules/sklift/datasets/datasets.html#fetch_hillstrom",
+  "resolved_url": "https://hillstorm1.s3.us-east-2.amazonaws.com/hillstorm_no_indices.csv.gz",
+  "downloaded_utc": "2026-09-16T16:46:50.118120+00:00",
+  "sha256": "00a6a868e05a9ffe7382da51629f6d6dce88c5acfc945e79d314ebc78fd3a2c0",
+  "bytes": 4028958,
+  "rows": 64000,
+  "experiment_year": 2008,
+  "outcome_window_days": 14,
+  "license_note": "作者公开用于分析；原页面未提供明确的标准许可，不将原始数据默认纳入版本控制。"
+}
