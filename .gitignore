@@ -8,3 +8,4 @@ data/raw/*.part
 data/processed/*.duckdb
 data/processed/*.csv
 .idea/
+/notebooks/analysis.ipynb
