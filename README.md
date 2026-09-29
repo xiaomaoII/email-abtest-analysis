@@ -4,11 +4,12 @@
 
 ## 从这里开始
 
-当前状态（2026-09-28）：原理学习与本人业务初稿已有记录；
-**现有 Python 全部由 Agent 编写，用户只写过部分 SQL，Python 独立实现尚未开始。**
+当前状态（2026-09-29）：原理学习与本人业务初稿已有记录；
+既有分析实现由 Agent 编写，用户亲手写过部分 SQL。
+用户已在逐步指导下编写 [Python 练习笔记本](notebooks/python_practice.ipynb)，P1 数据读取与检查已完成指导验收；后续任务继续记录辅助程度，不将提示后完成写成首次完全独立实现。
 已在指导下完成 G1 本地版本管理和 G2 首次私有仓库上传，并通过保存、提交、推送的基础概念问答。
 参考实现与学习记录已上传到私有仓库 `xiaomaoII/email-abtest-analysis`。
-下一阶段按 [Python 独立实操＋Git/GitHub 项目发布计划](docs/python_independent_practice_plan.md) 从 P1 数据读取检查开始；
+后续按 [Python 独立实操＋Git/GitHub 项目发布计划](docs/python_independent_practice_plan.md) 推进 P2—P6；
 G3 将随 P1—P6 持续练习提交和推送，之后完成 G4 分支、Pull Request 与纠错练习，最后进行 G5 新克隆复现和 G6 公开发布。
 终端为主、PyCharm 辅助；每次由用户亲手完成一个小任务。
 接手先读 [PROJECT_STATE.md](PROJECT_STATE.md) 和 [TODO.md](TODO.md)；
