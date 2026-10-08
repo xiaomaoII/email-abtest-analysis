@@ -4,12 +4,12 @@
 
 ## 从这里开始
 
-当前状态（2026-10-07）：原理学习与本人业务初稿已有记录；
+当前状态（2026-10-08）：原理学习与本人业务初稿已有记录；
 既有分析实现由 Agent 编写，用户亲手写过部分 SQL。
-用户已在逐步指导下编写 [Python 练习笔记本](notebooks/python_practice.ipynb)，P1、P2 已完成指导验收；P2 汇总与 SQL 核对通过，新增未访问人数代码由 Agent 按用户要求补写，用户运行并解释。P2 已提交并推送（`7e6772c`）。P3 已完成两项 Welch、单项区间及 Holm 的指导计算与顺序运行核对；女装比较和汇总为参考后复现，相对提升口径尚待核对。继续如实记录辅助程度。
+用户已在逐步指导下编写 [Python 练习笔记本](notebooks/python_practice.ipynb)，P1、P2 已完成指导验收；P2 汇总与 SQL 核对通过，新增未访问人数代码由 Agent 按用户要求补写，用户运行并解释。P2 已提交并推送（`7e6772c`）。P3 已完成两项 Welch、单项区间及 Holm 的指导计算与顺序运行核对；女装比较和汇总为参考后复现，相对提升补充已运行核对。P4已完成小数组、两项真实收入Bootstrap及种子检查；女装迁移经提示排错完成，42个非空代码单元重启后顺序运行通过。继续如实记录辅助程度。
 已在指导下完成 G1 本地版本管理和 G2 首次私有仓库上传，并通过保存、提交、推送的基础概念问答。
 参考实现与学习记录已上传到私有仓库 `xiaomaoII/email-abtest-analysis`。
-后续按 [Python 独立实操＋Git/GitHub 项目发布计划](docs/python_independent_practice_plan.md) 记录 P3 本轮成果，补充相对提升口径后推进 P4—P6；
+后续按 [Python 独立实操＋Git/GitHub 项目发布计划](docs/python_independent_practice_plan.md) 在 P4 指导计算与核验完成后推进 P5—P6；
 G3 将随 P1—P6 持续练习提交和推送，之后完成 G4 分支、Pull Request 与纠错练习，最后进行 G5 新克隆复现和 G6 公开发布。
 终端为主、PyCharm 辅助；每次由用户亲手完成一个小任务。
 接手先读 [PROJECT_STATE.md](PROJECT_STATE.md) 和 [TODO.md](TODO.md)；
